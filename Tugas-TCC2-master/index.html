@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('images/155541.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+        <p>Hi Visitor</p>
+  </div>
+  <div class="w3-display-topright w3-container w3-large">
+    <p><button onclick="document.getElementById('who').style.display='block'" class="w3-button w3-black">who</button></p>
+    <p><button onclick="document.getElementById('about').style.display='block'" class="w3-button w3-black">about</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">contact</button></p>
+  </div>
+  <div class="w3-display-bottomright w3-container">
+    <p class="w3-xlarge"><h1>Yogyakarta</h1></p>
+    <p>Copyright © 2017 - Johan Putra R</p>
+  </div>
+</div>
+
+<!-- who modal -->
+<div id="who" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black w3-display-container">
+        <span onclick="document.getElementById('who').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+        <h1>Who</h1>
+      </div>
+      <div class="w3-container w3-center">         
+        <img src="images/1488860118445.jpg" class="img-rounded" width="300" height="320">
+        <p>Johan Putra Rahmadan</p>
+      </div>
+    </div>
+  </div>
+
+<!-- about Modal -->
+<div id="about" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('about').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>About</h1>
+    </div>
+    <div class="w3-container">
+      <p>
+        Saya kuliah Di STMIK AKAKOM Yogyakarta, tepatnya di Program Studi Teknik Informatika pada tahun 2015
+        web ini saya buat untuk Tugas Teknologi Cloud Computing dan di kumpulkan pada hari Selasa, 21 November 2017
+        entahlah saya tidak tahu apa yang akan saya isi untuk mengisi about, mungkin ini saja yang bisa saya sampaikan
+        jika ingin mengubungi silahkan klik contact maka akan tertera isi dari akun milik saya.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-bottom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container">
+      <p>You may contact me by:</p>
+      <ol>
+          <li>Telegram  : @johanrahmadan</li>
+          <li>Email : saiyanexpress@gmail.com></li>
+          <li>Twitter : @saiyan_express</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
